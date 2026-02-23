@@ -1,54 +1,45 @@
-# Vinisha Gupta Portfolio
+# Vinisha Gupta - Developer Portfolio
 
-A full-stack personal portfolio built with a React frontend and a Node.js/Express backend.
-The project presents profile content, experience, featured work, and contact links in a modern single-page layout.
+A modern, full-stack personal portfolio built with React (Vite) and Node.js/Express, designed to showcase my profile, technical skills, experience, and featured projects in a clean, responsive single-page application.
 
-## Features
-- Responsive one-page portfolio layout
-- Smooth section scrolling from navbar
-- Scroll-based reveal animations
-- Featured project cards with live preview and external links
-- Contact section with direct email, GitHub, and LinkedIn actions
-- Resume link that opens a hosted PDF
+The project focuses on performance, simplicity, and structured architecture while maintaining a smooth user experience.
+
+## Highlights
+
+- Fully responsive single-page layout
+- Smooth navigation with section-based scrolling
+- Scroll-triggered reveal animations
+- Dynamic featured project cards with live demo & external links
+- Contact section with quick access to Email, GitHub, and LinkedIn
+- Resume download via hosted PDF
+- Lightweight Express backend serving profile data
 
 ## Tech Stack
 
 ### Frontend
+
 - React 18
 - Vite 6
-- CSS3 (custom styling + animations)
 - JavaScript (ES6+)
+- Custom CSS (animations + responsive styling)
 
 ### Backend
+
 - Node.js
 - Express 4
 - CORS middleware
 
-## Dependencies
+## Installation & Setup
 
-### Frontend (`frontend/package.json`)
-- `react@^18.3.1`
-- `react-dom@^18.3.1`
-- `vite@^6.0.5` (dev)
-- `@vitejs/plugin-react@^4.3.4` (dev)
+### 1. Clone the Repository
 
-### Backend (`backend/package.json`)
-- `express@^4.21.2`
-- `cors@^2.8.5`
-
-## Prerequisites
-- Node.js (recommended: v20+; tested in this setup with v22)
-- npm (comes with Node.js)
-
-## Getting Started
-
-### 1. Clone and enter project
 ```bash
 git clone <your-repo-url>
 cd portfolio
 ```
 
-### 2. Install dependencies
+### 2. Install Dependencies
+
 ```bash
 cd backend
 npm install
@@ -56,71 +47,74 @@ cd ../frontend
 npm install
 ```
 
-## Run the Application (Development)
+## Running the Application (Development Mode)
 
 Open two terminals:
 
-### Terminal 1: Backend
+### Backend
+
 ```bash
 cd backend
 npm run dev
 ```
-Backend runs at: `http://localhost:4000`
 
-### Terminal 2: Frontend
+Runs at: `http://localhost:4000`
+
+### Frontend
+
 ```bash
 cd frontend
 npm run dev
 ```
-Frontend runs at: `http://localhost:5173`
 
-## Production Commands
+Runs at: `http://localhost:5173`
+
+## Production Build
 
 ### Backend
+
 ```bash
 cd backend
 npm start
 ```
 
-### Frontend build + preview
+### Frontend
+
 ```bash
 cd frontend
 npm run build
 npm run preview
 ```
 
-## Available Scripts
+## API Endpoint
 
-### Backend scripts
-- `npm run dev` - Start backend in watch mode
-- `npm start` - Start backend normally
-
-### Frontend scripts
-- `npm run dev` - Start Vite development server
-- `npm run build` - Build frontend for production
-- `npm run preview` - Preview production build locally
-
-## API
-- `GET /api/profile` - Returns hero/profile data consumed by the frontend
+| Method | Endpoint       | Description                                      |
+|--------|----------------|--------------------------------------------------|
+| GET    | `/api/profile` | Returns profile/hero data consumed by frontend   |
 
 ## Project Structure
+
 ```text
 portfolio/
-  backend/
-    package.json
-    server.js
-  frontend/
-    index.html
-    package.json
-    vite.config.js
-    public/
-      favicon.svg
-      VinishaGupta_Resume.pdf
-    src/
-      App.jsx
-      main.jsx
-      styles.css
+|
+|-- backend/
+|   |-- server.js
+|   `-- package.json
+|
+|-- frontend/
+|   |-- index.html
+|   |-- vite.config.js
+|   |-- package.json
+|   |-- public/
+|   |   `-- VinishaGupta_Resume.pdf
+|   `-- src/
+|       |-- App.jsx
+|       |-- main.jsx
+|       `-- styles.css
 ```
 
-## Author
-Vinisha Gupta
+## About Me
+
+Vinisha Gupta  
+Full-Stack Developer | MCA Student  
+Focused on building scalable web applications using modern JavaScript frameworks and clean backend architecture.
