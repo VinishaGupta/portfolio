@@ -64,10 +64,6 @@ body {
   font-size: 1rem;
 }
 
-.nav-list span {
-  color: var(--accent);
-}
-
 .resume-btn,
 .cta {
   border: 1px solid var(--accent);
@@ -126,7 +122,8 @@ h2 {
   padding: 1rem 1.8rem;
 }
 
-.about-section {
+.about-section,
+.experience-section {
   max-width: 980px;
   margin: 8rem auto 0;
 }
@@ -166,6 +163,50 @@ h2 {
   line-height: 1.7;
 }
 
+.experience-card {
+  margin-top: 2rem;
+  max-width: 900px;
+  border-left: 2px solid rgba(255, 255, 255, 0.4);
+  padding-left: 1.25rem;
+}
+
+.experience-card h4 {
+  margin: 0;
+  color: var(--text-main);
+  font-size: clamp(1.5rem, 2.3vw, 2.1rem);
+}
+
+.experience-date {
+  margin: 0.65rem 0 1.2rem;
+  color: var(--text-dim);
+  font-family: 'Space Mono', monospace;
+  font-size: 1rem;
+}
+
+.experience-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0.9rem;
+}
+
+.experience-list li {
+  color: var(--text-dim);
+  font-size: clamp(1rem, 1.5vw, 1.25rem);
+  line-height: 1.6;
+  padding-left: 1.4rem;
+  position: relative;
+}
+
+.experience-list li::before {
+  content: '>';
+  color: var(--accent);
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
 .stub-section {
   height: 1px;
 }
@@ -201,7 +242,8 @@ h2 {
     margin-top: 4rem;
   }
 
-  .about-section {
+  .about-section,
+  .experience-section {
     margin-top: 5rem;
   }
 }

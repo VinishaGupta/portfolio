@@ -1,15 +1,27 @@
 import { useEffect, useState } from 'react';
 
 const navItems = [
-  { id: 'about', label: 'About', num: '01.' },
-  { id: 'experience', label: 'Experience', num: '02.' },
-  { id: 'work', label: 'Work', num: '03.' },
-  { id: 'contact', label: 'Contact', num: '04.' }
+  { id: 'about', label: 'About' },
+  { id: 'experience', label: 'Experience' },
+  { id: 'work', label: 'Work' },
+  { id: 'contact', label: 'Contact' }
 ];
 
 const aboutParagraphs = [
   'I am currently pursuing a Master of Computer Applications (MCA) at Ramdeobaba University with a strong foundation in full-stack development and problem solving. I am working as a Frontend Developer Intern at BeRAM - TBI, where I build responsive interfaces using React, Next.js, and TypeScript, integrate backend APIs, and implement secure payment solutions.',
   'I am passionate about designing intuitive user experiences while developing scalable, efficient web applications. With solid knowledge of Data Structures & Algorithms, OOPS, and SQL, I enjoy turning complex problems into clean, practical solutions.'
+];
+
+const experienceBullets = [
+  'Built a full-stack MERN-based Admin CRM system with secure JWT authentication and role-based access control.',
+  'Developed the frontend using Next.js and Tailwind CSS, building responsive, optimized, and production-ready UI components.',
+  'Implemented user authentication including signup, login, password hashing (bcrypt), and protected routes using middleware.',
+  'Integrated MongoDB with Mongoose for schema design, data validation, and structured collections.',
+  'Developed password reset functionality using SMTP (Brave) with secure token generation and expiration handling.',
+  'Integrated payment gateway authentication with order tracking and payment status filtering.',
+  'Designed and built a responsive Admin Dashboard using React, TypeScript, Tailwind CSS, and React Router.',
+  'Applied secure environment configuration using .env for API keys, JWT secrets, SMTP credentials, and payment gateway keys.',
+  'Structured backend using modular architecture (routes, models, middleware, controllers) following best practices.'
 ];
 
 const fallback = {
@@ -39,9 +51,7 @@ export default function App() {
           <ul className="nav-list">
             {navItems.map((item) => (
               <li key={item.id}>
-                <a href={`#${item.id}`}>
-                  <span>{item.num}</span> {item.label}
-                </a>
+                <a href={`#${item.id}`}>{item.label}</a>
               </li>
             ))}
             <li>
@@ -74,7 +84,22 @@ export default function App() {
         </div>
       </section>
 
-      <section id="experience" className="stub-section" />
+      <section id="experience" className="experience-section">
+        <h3 className="section-title">
+          <span>02.</span>Experience
+        </h3>
+
+        <div className="experience-card">
+          <h4>Frontend Developer</h4>
+          <p className="experience-date">Dec 2025 - Present</p>
+          <ul className="experience-list">
+            {experienceBullets.map((item) => (
+              <li key={item}>{item}</li>
+            ))}
+          </ul>
+        </div>
+      </section>
+
       <section id="work" className="stub-section" />
       <section id="contact" className="stub-section" />
     </div>
