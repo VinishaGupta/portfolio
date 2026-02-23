@@ -86,7 +86,7 @@ export default function App() {
 
       <section id="experience" className="experience-section">
         <h3 className="section-title">
-          <span>02.</span>Experience
+          <span>02.</span> Experience
         </h3>
 
         <div className="experience-card">
@@ -101,7 +101,27 @@ export default function App() {
       </section>
 
       <section id="work" className="stub-section" />
-      <section id="contact" className="stub-section" />
+
+      <section id="contact" className="contact-section">
+        <p className="contact-kicker">04. What's Next?</p>
+        <h3 className="contact-title">Get In Touch</h3>
+        <p className="contact-description">
+          My inbox is always open. Whether you have a question, collaboration idea, or just want to say hi, I will try my best to get back to you.
+        </p>
+
+        <a className="contact-mail" href="mailto:vinishasgupta@gmail.com">
+          Say Hello
+        </a>
+
+        <div className="contact-links">
+          <a href="https://www.linkedin.com/in/vinisha-gupta-4a2b6634b/" target="_blank" rel="noreferrer">
+            LinkedIn
+          </a>
+          <a href="https://github.com/VinishaGupta" target="_blank" rel="noreferrer">
+            GitHub
+          </a>
+        </div>
+      </section>
     </div>
   );
 }

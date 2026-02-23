@@ -2,7 +2,7 @@
 
 :root {
   --bg: #061c3a;
-  --bg-soft: #0a2348;
+  --bg-soft: #480a2f;
   --text-main: #c6d4f4;
   --text-dim: #8894b0;
   --accent: #ffffff;
@@ -65,7 +65,9 @@ body {
 }
 
 .resume-btn,
-.cta {
+.cta,
+.contact-mail,
+.contact-links a {
   border: 1px solid var(--accent);
   background: transparent;
   color: var(--accent);
@@ -73,6 +75,7 @@ body {
   font-size: 1rem;
   border-radius: 6px;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .resume-btn {
@@ -207,6 +210,51 @@ h2 {
   top: 0;
 }
 
+.contact-section {
+  max-width: 760px;
+  margin: 9rem auto 0;
+  text-align: center;
+}
+
+.contact-kicker {
+  margin: 0;
+  color: var(--accent);
+  font-family: 'Space Mono', monospace;
+  font-size: 1.4rem;
+}
+
+.contact-title {
+  margin: 1rem 0 1.2rem;
+  font-size: clamp(2.5rem, 7vw, 5rem);
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+}
+
+.contact-description {
+  margin: 0 auto;
+  max-width: 680px;
+  color: var(--text-dim);
+  font-size: clamp(1.05rem, 2vw, 1.45rem);
+  line-height: 1.7;
+}
+
+.contact-mail {
+  display: inline-block;
+  margin-top: 2.3rem;
+  padding: 1rem 2rem;
+}
+
+.contact-links {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 0.8rem;
+}
+
+.contact-links a {
+  padding: 0.7rem 1rem;
+}
+
 .stub-section {
   height: 1px;
 }
@@ -243,7 +291,13 @@ h2 {
   }
 
   .about-section,
-  .experience-section {
+  .experience-section,
+  .contact-section {
     margin-top: 5rem;
+  }
+
+  .contact-links {
+    flex-direction: column;
+    align-items: center;
   }
 }
