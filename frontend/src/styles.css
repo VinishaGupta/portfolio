@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Inter:wght@400;600;700;800&display=swap');
+
+:root {
+  --bg: #061c3a;
+  --bg-soft: #0a2348;
+  --text-main: #c6d4f4;
+  --text-dim: #8894b0;
+  --accent: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  min-height: 100%;
+}
+
+body {
+  background: radial-gradient(circle at 20% 0%, #103062 0%, var(--bg) 45%, #03142c 100%);
+  color: var(--text-main);
+  font-family: Inter, sans-serif;
+}
+
+.page {
+  min-height: 100vh;
+  padding: 2rem 3.5rem 4rem;
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 52px;
+  height: 52px;
+  border: 2px solid var(--accent);
+  color: var(--accent);
+  font-family: 'Space Mono', monospace;
+  font-weight: 700;
+  display: grid;
+  place-items: center;
+  clip-path: polygon(50% 0%, 100% 24%, 100% 76%, 50% 100%, 0% 76%, 0% 24%);
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-list a {
+  color: var(--text-main);
+  text-decoration: none;
+  font-family: 'Space Mono', monospace;
+  font-size: 1rem;
+}
+
+.nav-list span {
+  color: var(--accent);
+}
+
+.resume-btn,
+.cta {
+  border: 1px solid var(--accent);
+  background: transparent;
+  color: var(--accent);
+  font-family: 'Space Mono', monospace;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.resume-btn {
+  padding: 0.8rem 1.2rem;
+}
+
+.hero {
+  max-width: 980px;
+  margin: 6rem auto 0;
+  animation: enter 650ms ease-out;
+}
+
+.intro {
+  color: var(--accent);
+  font-family: 'Space Mono', monospace;
+  font-size: 1.5rem;
+  margin: 0 0 1.5rem;
+}
+
+h1,
+h2 {
+  margin: 0;
+  line-height: 1.1;
+  font-size: clamp(2.8rem, 9vw, 6rem);
+  letter-spacing: -0.04em;
+}
+
+h2 {
+  color: #92a0c6;
+  margin-bottom: 1.8rem;
+}
+
+.description {
+  max-width: 730px;
+  font-size: clamp(1.05rem, 2vw, 1.5rem);
+  line-height: 1.55;
+  color: var(--text-dim);
+}
+
+.tagline {
+  margin-top: 20px;
+  font-size: 3rem;
+}
+
+.cta {
+  margin-top: 2.2rem;
+  padding: 1rem 1.8rem;
+}
+
+.about-section {
+  max-width: 980px;
+  margin: 8rem auto 0;
+}
+
+.section-title {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  font-family: 'Space Mono', monospace;
+  font-size: clamp(1.7rem, 3vw, 2.3rem);
+  color: var(--text-main);
+}
+
+.section-title::after {
+  content: '';
+  height: 1px;
+  background: rgba(255, 255, 255, 0.22);
+  flex: 1;
+  margin-left: 0.7rem;
+}
+
+.section-title span {
+  color: var(--accent);
+  font-size: 1.2rem;
+}
+
+.about-content {
+  margin-top: 2rem;
+  max-width: 860px;
+}
+
+.about-content p {
+  margin: 0 0 1.2rem;
+  color: var(--text-dim);
+  font-size: clamp(1.05rem, 1.7vw, 1.45rem);
+  line-height: 1.7;
+}
+
+.stub-section {
+  height: 1px;
+}
+
+@keyframes enter {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 900px) {
+  .page {
+    padding: 1.2rem 1.2rem 2.5rem;
+  }
+
+  .topbar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .nav-list {
+    flex-wrap: wrap;
+    gap: 1rem 1.4rem;
+  }
+
+  .hero {
+    margin-top: 4rem;
+  }
+
+  .about-section {
+    margin-top: 5rem;
+  }
+}
