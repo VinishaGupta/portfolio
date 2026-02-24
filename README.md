@@ -1,10 +1,10 @@
-# Vinisha Gupta - Developer Portfolio
+# 😄 Vinisha Gupta - Developer Portfolio
 
 A modern, full-stack personal portfolio built with React (Vite) and Node.js/Express, designed to showcase my profile, technical skills, experience, and featured projects in a clean, responsive single-page application.
 
 The project focuses on performance, simplicity, and structured architecture while maintaining a smooth user experience.
 
-## Highlights
+## ✨ Highlights
 
 - Fully responsive single-page layout
 - Smooth navigation with section-based scrolling
@@ -14,7 +14,7 @@ The project focuses on performance, simplicity, and structured architecture whil
 - Resume download via hosted PDF
 - Lightweight Express backend serving profile data
 
-## Tech Stack
+## 🎨 Tech Stack
 
 ### Frontend
 
@@ -29,7 +29,7 @@ The project focuses on performance, simplicity, and structured architecture whil
 - Express 4
 - CORS middleware
 
-## Installation & Setup
+## ⚙️ Installation & Setup
 
 ### 1. Clone the Repository
 
@@ -47,7 +47,7 @@ cd ../frontend
 npm install
 ```
 
-## Running the Application (Development Mode)
+## 🧪  Running the Application (Development Mode)
 
 Open two terminals:
 
@@ -69,7 +69,7 @@ npm run dev
 
 Runs at: `http://localhost:5173`
 
-## Production Build
+## 🏗️ Production Build
 
 ### Backend
 
@@ -86,13 +86,13 @@ npm run build
 npm run preview
 ```
 
-## API Endpoint
+## 🔌 API Endpoint
 
 | Method | Endpoint       | Description                                      |
 |--------|----------------|--------------------------------------------------|
 | GET    | `/api/profile` | Returns profile/hero data consumed by frontend   |
 
-## Project Structure
+## 📂 Project Structure
 
 ```text
 portfolio/
