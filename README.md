@@ -113,6 +113,59 @@ portfolio/
 |       `-- styles.css
 ```
 
+## 🌍 Deployment
+🚀 Live Application
+
+Frontend (Vercel):
+```bash
+https://your-portfolio.vercel.app
+```
+
+Backend (Render):
+```bash
+https://portfolio-bmmn.onrender.com
+```
+
+
+## 🏗️ Deployment Architecture
+
+This project follows a separated deployment architecture:
+
+```
+User (Browser)
+      ↓
+Frontend (React + Vite) → Hosted on Vercel
+      ↓ API Calls
+Backend (Node.js + Express) → Hosted on Render
+      ↓
+JSON Response (/api/profile)
+```
+
+## 🔗 How Frontend & Backend Are Connected
+
+The frontend communicates with the backend using REST API calls.
+
+Backend API Endpoint
+```
+GET /api/profile
+```
+
+This endpoint returns profile data in JSON format, which is dynamically rendered on the frontend.
+
+## 🌐 Environment Configuration
+
+To connect the frontend with the deployed backend, an environment variable is used.
+
+In Vercel:
+```
+VITE_API_URL=https://portfolio-bmmn.onrender.com
+```
+
+In the frontend code:
+```
+fetch(`${import.meta.env.VITE_API_URL}/api/profile`)
+```
+
 ## About Me
 
 Vinisha Gupta  
