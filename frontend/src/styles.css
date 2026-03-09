@@ -312,6 +312,229 @@ h2 {
   pointer-events: none;
 }
 
+.bookstore-preview {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  gap: 1rem;
+  padding: 1rem;
+  background:
+    radial-gradient(circle at top right, rgba(242, 166, 97, 0.28), transparent 26%),
+    linear-gradient(135deg, #461714 0%, #7f2f20 44%, #1b0d14 100%);
+}
+
+.bookstore-topbar {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 1rem;
+  align-items: center;
+  color: rgba(255, 240, 225, 0.92);
+  font-family: 'Space Mono', monospace;
+  font-size: 0.68rem;
+}
+
+.bookstore-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-weight: 600;
+}
+
+.bookstore-brand-mark {
+  width: 1.45rem;
+  height: 1.45rem;
+  display: inline-grid;
+  place-items: center;
+  border-radius: 0.45rem;
+  background: linear-gradient(180deg, #f1b252 0%, #9c3a26 100%);
+  color: #2b120f;
+  font-weight: 700;
+}
+
+.bookstore-nav {
+  display: flex;
+  gap: 0.9rem;
+  justify-content: center;
+  opacity: 0.84;
+}
+
+.bookstore-actions {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+
+.bookstore-search {
+  width: 4.8rem;
+  height: 1.2rem;
+  border-radius: 999px;
+  background: rgba(255, 244, 230, 0.18);
+  border: 1px solid rgba(255, 244, 230, 0.16);
+}
+
+.bookstore-dot {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 999px;
+  background: rgba(255, 244, 230, 0.7);
+}
+
+.bookstore-hero {
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  align-items: center;
+  gap: 1rem;
+}
+
+.bookstore-copy {
+  color: #fff3e5;
+  max-width: 19rem;
+}
+
+.bookstore-kicker {
+  margin: 0 0 0.5rem;
+  color: rgba(255, 231, 200, 0.82);
+  font-family: 'Space Mono', monospace;
+  font-size: 0.7rem;
+  letter-spacing: 0.04em;
+}
+
+.bookstore-copy h5 {
+  margin: 0;
+  font-size: 1.7rem;
+  line-height: 1.05;
+  letter-spacing: -0.04em;
+}
+
+.bookstore-text {
+  margin: 0.7rem 0 0;
+  color: rgba(255, 232, 210, 0.86);
+  font-size: 0.82rem;
+  line-height: 1.55;
+}
+
+.bookstore-cta {
+  margin-top: 1rem;
+  display: flex;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+  font-family: 'Space Mono', monospace;
+  font-size: 0.68rem;
+}
+
+.bookstore-primary,
+.bookstore-secondary {
+  padding: 0.5rem 0.8rem;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 238, 220, 0.24);
+}
+
+.bookstore-primary {
+  background: #f4e0cb;
+  color: #5a2416;
+  border-color: transparent;
+}
+
+.bookstore-secondary {
+  color: #fff3e5;
+  background: rgba(255, 241, 224, 0.08);
+}
+
+.bookstore-art {
+  position: relative;
+  min-height: 180px;
+}
+
+.bookstore-art::before {
+  content: '';
+  position: absolute;
+  right: 8%;
+  top: 8%;
+  width: 78%;
+  height: 78%;
+  border-radius: 1.5rem;
+  background:
+    radial-gradient(circle at top, rgba(255, 205, 139, 0.7), transparent 30%),
+    linear-gradient(180deg, rgba(122, 57, 37, 0.5), rgba(39, 12, 17, 0.75));
+  box-shadow: 0 24px 38px rgba(9, 4, 10, 0.28);
+}
+
+.bookstore-book-stack {
+  position: absolute;
+  right: 22%;
+  bottom: 14%;
+  width: 42%;
+  height: 46%;
+}
+
+.bookstore-book-stack span {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 1.1rem;
+  border-radius: 0.25rem;
+  background: linear-gradient(90deg, #f7e5cf 0%, #bf8c63 100%);
+  box-shadow: 0 10px 18px rgba(0, 0, 0, 0.22);
+}
+
+.bookstore-book-stack span:nth-child(1) {
+  bottom: 0;
+}
+
+.bookstore-book-stack span:nth-child(2) {
+  bottom: 1.45rem;
+  right: 10%;
+  left: 8%;
+  background: linear-gradient(90deg, #d59d63 0%, #8c3d29 100%);
+}
+
+.bookstore-book-stack span:nth-child(3) {
+  bottom: 2.9rem;
+  right: 16%;
+  left: 14%;
+  background: linear-gradient(90deg, #f0c17f 0%, #b04a2e 100%);
+}
+
+.bookstore-lamp {
+  position: absolute;
+  right: 12%;
+  top: 20%;
+  width: 3.6rem;
+  height: 3.6rem;
+  border-radius: 999px 999px 0 999px;
+  background: radial-gradient(circle at 40% 40%, #ffd7a4 0%, #e39652 45%, #8a3d28 100%);
+  transform: rotate(18deg);
+  box-shadow: 0 0 36px rgba(255, 188, 110, 0.24);
+}
+
+.bookstore-shelf {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.7rem;
+}
+
+.bookstore-card {
+  padding: 0.75rem 0.8rem;
+  border-radius: 0.9rem;
+  background: rgba(255, 244, 232, 0.1);
+  border: 1px solid rgba(255, 244, 232, 0.14);
+  color: #fff1df;
+  backdrop-filter: blur(8px);
+}
+
+.bookstore-card p {
+  margin: 0 0 0.35rem;
+  font-family: 'Space Mono', monospace;
+  font-size: 0.65rem;
+  color: rgba(255, 226, 200, 0.74);
+}
+
+.bookstore-card strong {
+  font-size: 0.83rem;
+  line-height: 1.4;
+}
+
 .work-preview-badge {
   position: absolute;
   left: 0.8rem;
@@ -592,5 +815,16 @@ h2 {
 
   .work-preview {
     min-height: 220px;
+  }
+
+  .bookstore-hero,
+  .bookstore-shelf,
+  .bookstore-topbar {
+    grid-template-columns: 1fr;
+  }
+
+  .bookstore-nav {
+    justify-content: flex-start;
+    flex-wrap: wrap;
   }
 }

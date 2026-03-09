@@ -51,6 +51,15 @@ const workProjects = [
     stack: ['React', 'TypeScript', 'Vercel'],
     github: 'https://github.com/VinishaGupta/Task-Master',
     live: 'https://taskmaster-eight-eta.vercel.app/'
+  },
+  {
+    title: 'Ecommerce Bookstore',
+    label: 'UI/UX Project',
+    description:
+      'A UI/UX design project for an ecommerce bookstore, focused on intuitive browsing, clean product discovery, and a smooth shopping flow.',
+    stack: ['Figma', 'UI/UX', 'Wireframing', 'Prototyping'],
+    previewType: 'bookstore',
+    live: 'https://www.figma.com/proto/2VJBrF17AgkrG3SmD3xwJc/Untitled?node-id=431-75&p=f&t=kWp460gnTMismvTO-0&scaling=scale-down&content-scaling=fixed&page-id=431%3A74&starting-point-node-id=551%3A293'
   }
 ];
 
@@ -97,6 +106,76 @@ export default function App() {
     const target = document.getElementById(sectionId);
     if (!target) return;
     target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  };
+
+  const renderProjectPreview = (project) => {
+    if (project.previewType === 'bookstore') {
+      return (
+        <div className="bookstore-preview" aria-hidden="true">
+          <div className="bookstore-topbar">
+            <div className="bookstore-brand">
+              <span className="bookstore-brand-mark">M</span>
+              <span>Moonlit Pages</span>
+            </div>
+            <div className="bookstore-nav">
+              <span>Home</span>
+              <span>Categories</span>
+              <span>Best Sellers</span>
+            </div>
+            <div className="bookstore-actions">
+              <span className="bookstore-search" />
+              <span className="bookstore-dot" />
+              <span className="bookstore-dot" />
+            </div>
+          </div>
+          <div className="bookstore-hero">
+            <div className="bookstore-copy">
+              <p className="bookstore-kicker">Curated bookstore experience</p>
+              <h5>Discover your next favorite story.</h5>
+              <p className="bookstore-text">
+                Warm editorial visuals, guided browsing, and a checkout flow designed for clarity.
+              </p>
+              <div className="bookstore-cta">
+                <span className="bookstore-primary">Shop Now</span>
+                <span className="bookstore-secondary">Explore Genres</span>
+              </div>
+            </div>
+            <div className="bookstore-art">
+              <div className="bookstore-book-stack">
+                <span />
+                <span />
+                <span />
+              </div>
+              <div className="bookstore-lamp" />
+            </div>
+          </div>
+          <div className="bookstore-shelf">
+            <div className="bookstore-card">
+              <p>Best Sellers</p>
+              <strong>12 curated picks</strong>
+            </div>
+            <div className="bookstore-card">
+              <p>Genres</p>
+              <strong>Fiction, Romance, Mystery</strong>
+            </div>
+            <div className="bookstore-card">
+              <p>Experience</p>
+              <strong>Readable layouts with warm tones</strong>
+            </div>
+          </div>
+        </div>
+      );
+    }
+
+    return (
+      <iframe
+        className="work-frame"
+        src={project.preview || project.live}
+        title={`${project.title} preview`}
+        loading="lazy"
+        referrerPolicy="no-referrer"
+      />
+    );
   };
 
   return (
@@ -188,14 +267,8 @@ export default function App() {
                 aria-label={`Open live demo for ${project.title}`}
               >
                 <div className="work-preview">
-                <iframe
-                  className="work-frame"
-                  src={project.live}
-                  title={`${project.title} preview`}
-                  loading="lazy"
-                  referrerPolicy="no-referrer"
-                />
-                <div className="work-preview-badge">{project.title}</div>
+                  {renderProjectPreview(project)}
+                  <div className="work-preview-badge">{project.title}</div>
                 </div>
               </a>
 
@@ -209,12 +282,16 @@ export default function App() {
                   ))}
                 </ul>
                 <div className="work-links">
-                  <a href={project.github} target="_blank" rel="noreferrer">
-                    GitHub
-                  </a>
-                  <a href={project.live} target="_blank" rel="noreferrer">
-                    Live Demo
-                  </a>
+                  {project.github ? (
+                    <a href={project.github} target="_blank" rel="noreferrer">
+                      GitHub
+                    </a>
+                  ) : null}
+                  {project.live ? (
+                    <a href={project.live} target="_blank" rel="noreferrer">
+                      {project.github ? 'Live Demo' : 'View Prototype'}
+                    </a>
+                  ) : null}
                 </div>
               </div>
             </article>
