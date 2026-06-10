@@ -8,7 +8,7 @@ const navItems = [
 ];
 
 const aboutParagraphs = [
-  'I am currently pursuing a Master of Computer Applications (MCA) at Ramdeobaba University with a strong foundation in full-stack development and problem solving. I am working as a Frontend Developer Intern at BeRAM - TBI, where I build responsive interfaces using React, Next.js, and TypeScript, integrate backend APIs, and implement secure payment solutions.',
+  'I am currently pursuing a Master of Computer Applications (MCA) at Ramdeobaba University with a strong foundation in frontend development and problem solving. I am working as a Frontend Developer Intern at BeRAM - TBI, where I build responsive interfaces using React, Next.js, and TypeScript, integrate backend APIs, and implement secure payment solutions.',
   'I am passionate about designing intuitive user experiences while developing scalable, efficient web applications. With solid knowledge of Data Structures & Algorithms, OOPS, and SQL, I enjoy turning complex problems into clean, practical solutions.'
 ];
 
@@ -22,7 +22,7 @@ const techStack = [
 ];
 
 const experienceBullets = [
-  'Built a full-stack MERN-based Admin CRM system with secure JWT authentication and role-based access control.',
+  'Built a MERN-based Admin CRM system with secure JWT authentication and role-based access control.',
   'Developed the frontend using Next.js and Tailwind CSS, building responsive, optimized, and production-ready UI components.',
   'Implemented user authentication including signup, login, password hashing (bcrypt), and protected routes using middleware.',
   'Integrated MongoDB with Mongoose for schema design, data validation, and structured collections.',
@@ -70,6 +70,8 @@ const fallback = {
   description:
     "I'm passionate about UI/UX design and problem-solving through Data Structures & Algorithms. I build scalable web applications, integrate backend systems, and create intuitive, user-friendly experiences."
 };
+
+function App() {
   const [profile, setProfile] = useState(fallback);
 
   useEffect(() => {
@@ -320,3 +322,5 @@ const fallback = {
     </div>
   );
 }
+
+export default App;
