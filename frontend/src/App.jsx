@@ -68,7 +68,7 @@ const fallback = {
   name: 'Vinisha Gupta.',
   tagline: 'Turning complex ideas into elegant solutions.',
   description:
-    "I'm a Full-Stack Developer passionate about UI/UX design and problem-solving through Data Structures & Algorithms. I build scalable web applications, integrate backend systems, and create intuitive, user-friendly experiences."
+    "I'm passionate about UI/UX design and problem-solving through Data Structures & Algorithms. I build scalable web applications, integrate backend systems, and create intuitive, user-friendly experiences."
 };
 
 export default function App() {
