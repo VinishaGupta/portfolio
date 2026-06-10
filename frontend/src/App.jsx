@@ -70,8 +70,6 @@ const fallback = {
   description:
     "I'm passionate about UI/UX design and problem-solving through Data Structures & Algorithms. I build scalable web applications, integrate backend systems, and create intuitive, user-friendly experiences."
 };
-
-export default function App() {
   const [profile, setProfile] = useState(fallback);
 
   useEffect(() => {
