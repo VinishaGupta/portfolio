@@ -39,7 +39,7 @@ const workProjects = [
     label: 'Featured Project',
     description:
       'A recipe discovery app that helps users generate practical meal ideas quickly with a clean and responsive experience.',
-    stack: ['React', 'Node.js', 'Express', 'MongoDB'],
+    stack: ['React', 'Node.js', 'Express', 'MongoDB','Cloudinary'],
     github: 'https://github.com/VinishaGupta/SmartRecipeGenerator.git',
     live: 'https://smartrecipegenerator-rbkj.onrender.com/'
   },
