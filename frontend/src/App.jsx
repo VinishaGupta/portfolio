@@ -13,12 +13,12 @@ const aboutParagraphs = [
 ];
 
 const techStack = [
-  { title: 'Frontend', items: 'HTML, CSS, JavaScript' },
-  { title: 'Programming Languages', items: 'Java, Python, C' },
-  { title: 'Core Concepts', items: 'Data Structures & Algorithms (DSA), SQL, OOPS' },
+  { title: 'Programming Languages', items: 'PHP, Java, Python, Dart, C' },
   { title: 'Databases', items: 'MySQL, MongoDB' },
-  { title: 'Tools & Platforms', items: 'Git, GitHub' },
-  { title: 'UI / UX & Design', items: 'Canva, Figma' }
+  { title: 'Frontend', items: 'HTML, CSS, JavaScript, Tailwind CSS, React' },
+  { title: 'Tools & Platforms', items: 'Git, GitHub, Linux, XAMPP, Render, Vercel' },
+  { title: 'UI / UX & Design', items: 'Canva, Figma' },
+  { title: 'Core Concepts', items: 'Data Structures and Algorithms' }
 ];
 
 const experienceBullets = [
