@@ -66,7 +66,7 @@ const workProjects = [
     label: 'Featured Project',
     description:
       'A web platform focused on anti-violence awareness, support resources, and accessible information for users seeking help.',
-    stack: ['HTML', 'CSS','PHP','Apache Tomcat','XAMPP'],
+    stack: ['HTML', 'CSS','PHP','ApacheTomcat','XAMPP'],
     previewType: 'antiViolence',
     live: 'https://anti-violence.vercel.app/'
   }
