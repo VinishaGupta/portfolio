@@ -535,6 +535,100 @@ h2 {
   line-height: 1.4;
 }
 
+.anti-preview {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  gap: 1rem;
+  padding: 1.2rem;
+  background:
+    linear-gradient(180deg, rgba(255, 233, 242, 0.92) 0%, rgba(210, 166, 214, 0.86) 38%, rgba(103, 67, 116, 0.96) 100%);
+  color: #241328;
+}
+
+.anti-topbar {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  padding-bottom: 0.8rem;
+  border-bottom: 1px solid rgba(52, 25, 58, 0.16);
+  font-weight: 700;
+  font-size: 0.78rem;
+}
+
+.anti-brand {
+  margin-right: auto;
+  font-size: 1rem;
+}
+
+.anti-hero {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  align-items: center;
+  gap: 1rem;
+}
+
+.anti-kicker {
+  margin: 0 0 0.5rem;
+  font-family: 'Space Mono', monospace;
+  font-size: 0.68rem;
+  color: rgba(54, 20, 61, 0.72);
+}
+
+.anti-hero h5 {
+  margin: 0;
+  max-width: 18rem;
+  font-size: 1.7rem;
+  line-height: 1.08;
+  color: #1e0f24;
+}
+
+.anti-hero p {
+  margin: 0.7rem 0 0;
+  max-width: 18rem;
+  color: rgba(36, 19, 40, 0.78);
+  font-size: 0.82rem;
+  line-height: 1.55;
+}
+
+.anti-symbol {
+  justify-self: center;
+  width: min(12rem, 80%);
+  aspect-ratio: 1;
+  border-radius: 999px;
+  display: grid;
+  place-items: center;
+  background:
+    radial-gradient(circle at 50% 44%, rgba(255, 255, 255, 0.42) 0 18%, transparent 19%),
+    linear-gradient(145deg, rgba(168, 31, 32, 0.96), rgba(104, 21, 28, 0.98));
+  box-shadow: 0 22px 38px rgba(38, 13, 45, 0.24);
+}
+
+.anti-symbol span {
+  width: 64%;
+  height: 16%;
+  border-radius: 999px;
+  background: rgba(255, 238, 238, 0.92);
+  transform: rotate(-28deg);
+}
+
+.anti-actions {
+  display: flex;
+  gap: 0.7rem;
+  flex-wrap: wrap;
+  font-family: 'Space Mono', monospace;
+  font-size: 0.68rem;
+}
+
+.anti-actions span {
+  padding: 0.55rem 0.75rem;
+  border-radius: 999px;
+  color: #fff4fb;
+  background: rgba(39, 16, 45, 0.64);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
 .work-preview-badge {
   position: absolute;
   left: 0.8rem;

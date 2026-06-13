@@ -67,6 +67,7 @@ const workProjects = [
     description:
       'A web platform focused on anti-violence awareness, support resources, and accessible information for users seeking help.',
     stack: ['React', 'Vercel'],
+    previewType: 'antiViolence',
     live: 'https://anti-violence.vercel.app/'
   }
 ];
@@ -170,6 +171,34 @@ function App() {
               <p>Experience</p>
               <strong>Readable layouts with warm tones</strong>
             </div>
+          </div>
+        </div>
+      );
+    }
+
+    if (project.previewType === 'antiViolence') {
+      return (
+        <div className="anti-preview" aria-hidden="true">
+          <div className="anti-topbar">
+            <span className="anti-brand">United Against Violence</span>
+            <span>About Us</span>
+            <span>Contact Us</span>
+          </div>
+          <div className="anti-hero">
+            <div>
+              <p className="anti-kicker">Awareness and support</p>
+              <h5>Stand together for safer communities.</h5>
+              <p>
+                Clear resources, prevention guidance, and a calm experience for people looking for help.
+              </p>
+            </div>
+            <div className="anti-symbol">
+              <span />
+            </div>
+          </div>
+          <div className="anti-actions">
+            <span>Learn More</span>
+            <span>Get Support</span>
           </div>
         </div>
       );
