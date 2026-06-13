@@ -60,6 +60,14 @@ const workProjects = [
     stack: ['Figma', 'UI/UX', 'Wireframing', 'Prototyping'],
     previewType: 'bookstore',
     live: 'https://www.figma.com/proto/2VJBrF17AgkrG3SmD3xwJc/Untitled?node-id=431-75&p=f&t=kWp460gnTMismvTO-0&scaling=scale-down&content-scaling=fixed&page-id=431%3A74&starting-point-node-id=551%3A293'
+  },
+  {
+    title: 'AnitiViolence.com',
+    label: 'Featured Project',
+    description:
+      'A web platform focused on anti-violence awareness, support resources, and accessible information for users seeking help.',
+    stack: ['React', 'Vercel'],
+    live: 'https://anti-violence.vercel.app/'
   }
 ];
 
