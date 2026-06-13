@@ -279,7 +279,7 @@ function App() {
 
         <div className="experience-card">
           <h4>Frontend Developer</h4>
-          <p className="experience-date">Dec 2025 - Present</p>
+          <p className="experience-date">May 2025 - May 26</p>
           <ul className="experience-list">
             {experienceBullets.map((item) => (
               <li key={item}>{item}</li>
