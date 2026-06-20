@@ -13,10 +13,10 @@ const aboutParagraphs = [
 ];
 
 const techStack = [
-  { title: 'Programming Languages', items: 'PHP, Java, Python, Dart, C' },
+  { title: 'Programming Languages', items: 'Java, Python, Dart, C' },
   { title: 'Databases', items: 'MySQL, MongoDB' },
   { title: 'Frontend', items: 'HTML, CSS, JavaScript, Tailwind CSS, React' },
-  { title: 'Tools & Platforms', items: 'Git, GitHub, Linux, XAMPP, Render, Vercel' },
+  { title: 'Tools & Platforms', items: 'Git, GitHub, Linux, Render, Vercel' },
   { title: 'UI / UX & Design', items: 'Canva, Figma' },
   { title: 'Core Concepts', items: 'Data Structures and Algorithms' }
 ];
