@@ -21,6 +21,15 @@ const techStack = [
   { title: 'Core Concepts', items: 'Data Structures and Algorithms' }
 ];
 
+const softwareDevBullets = [
+  'Developing a Hospital Management System using HTML, CSS, JavaScript, PHP, and MySQL.',
+  'Building responsive interfaces that allow users to browse hospitals, explore doctor profiles, and book appointments.',
+  'Integrating frontend components with PHP backend modules and MySQL database operations.',
+  'Implementing appointment booking workflows and improving overall user experience.',
+  'Debugging issues, optimizing application performance, and maintaining clean, reusable code.',
+  'Collaborating with the development team to implement new features and enhance existing functionality.'
+];
+
 const experienceBullets = [
   'Built a full-stack MERN-based Admin CRM system with secure JWT authentication and role-based access control.',
   'Developed the frontend using Next.js and Tailwind CSS, building responsive, optimized, and production-ready UI components.',
@@ -272,22 +281,37 @@ function App() {
         </div>
       </section>
 
-      <section id="experience" className="experience-section reveal">
-        <h3 className="section-title">
-          <span>02.</span> Experience
-        </h3>
+<section id="experience" className="experience-section reveal">
+  <h3 className="section-title">
+    <span>02.</span> Experience
+  </h3>
 
-        <div className="experience-card">
-          <h4>Frontend Developer</h4>
-          <p className="experience-date">May 2025 - May 26</p>
-          <ul className="experience-list">
-            {experienceBullets.map((item) => (
-              <li key={item}>{item}</li>
-            ))}
-          </ul>
-        </div>
-      </section>
+  {/* Current Experience */}
+  <div className="experience-card">
+    <h4>Software Developer Intern</h4>
+    <p className="experience-company">SmartJi Solutions</p>
+    <p className="experience-date">June 2026 – Present</p>
 
+    <ul className="experience-list">
+      {softwareDevBullets.map((item) => (
+        <li key={item}>{item}</li>
+      ))}
+    </ul>
+  </div>
+
+  {/* Previous Experience */}
+  <div className="experience-card">
+    <h4>Frontend Developer Intern</h4>
+    <p className="experience-company">BeRAM Drones</p>
+    <p className="experience-date">December 2025 – May 2026</p>
+
+    <ul className="experience-list">
+      {experienceBullets.map((item) => (
+        <li key={item}>{item}</li>
+      ))}
+    </ul>
+  </div>
+</section>
       <section id="work" className="work-section reveal">
         <h3 className="section-title">
           <span>03.</span> Some Things I've Built
