@@ -288,7 +288,7 @@ function App() {
 
   {/* Current Experience */}
   <div className="experience-card">
-    <h4>Software Developer Intern</h4>
+    <h4>Software Developer</h4>
     <p className="experience-company">SmartJi Solutions</p>
     <p className="experience-date">June 2026 – Present</p>
 
@@ -304,6 +304,17 @@ function App() {
     <h4>Frontend Developer Intern</h4>
     <p className="experience-company">BeRAM Drones</p>
     <p className="experience-date">December 2025 – May 2026</p>
+    <p className="experience-link-row">
+      Website:{' '}
+      <a
+        className="experience-link"
+        href="https://www.sticktoon.shop/"
+        target="_blank"
+        rel="noreferrer"
+      >
+        sticktoon.shop
+      </a>
+    </p>
 
     <ul className="experience-list">
       {experienceBullets.map((item) => (
