@@ -53,6 +53,15 @@ const workProjects = [
     live: 'https://smartrecipegenerator-rbkj.onrender.com/'
   },
   {
+    title: 'GSAP Cocktail Landing Page',
+    label: 'Featured Project',
+    description:
+      'A polished, animated landing page for a modern cocktail brand built with React, Vite, GSAP, and Tailwind CSS. The experience includes smooth scroll-based motion, cinematic hero animations, and an interactive cocktail showcase.',
+    stack: ['React', 'Vite', 'GSAP', 'Tailwind CSS'],
+    github: 'https://github.com/VinishaGupta/gsap-landing-page',
+    live: 'https://gsap-landing-page-ivory.vercel.app/'
+  },
+  {
     title: 'Task Master',
     label: 'Featured Project',
     description:
